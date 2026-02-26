@@ -14,3 +14,9 @@ This is a task to practice forking, cloning, staging, committing, pushing, and p
 10. Fix the image links in `index.html` with the images stored in `img`
 11. Stage, commit, and push the changes
 12. Create a pull request on GitHub to merge the changes into the `dev` branch
+13. Create a pull request on GitHub to merge the the `dev` branch into the `master` branch
+
+
+## GitHub Pages deployment
+1. Goto https://docs.github.com/en/pages/quickstart
+2. Follow from steps 6 through 11 to deploy the page (choose the main/master branch)
