@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All About Cockroaches</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #faf7f2;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #3a2a1a;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 1rem 1.4rem;
+      color: #e8d5b0;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav ul li a:hover {
+      background: #6b4c2a;
+      color: #fff;
+    }
+
+    /* ── Hero header ── */
+    header {
+      background: linear-gradient(135deg, #3a2a1a 0%, #6b4c2a 100%);
+      color: #e8d5b0;
+      text-align: center;
+      padding: 3.5rem 1rem 3rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+    }
+    header p.tagline {
+      font-style: italic;
+      font-size: 1.15rem;
+      opacity: 0.85;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 0 1.2rem;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 60px; /* offset for sticky nav */
+    }
+    section h2 {
+      font-size: 1.75rem;
+      color: #5a3a1a;
+      border-bottom: 3px solid #c8a46a;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+    section p {
+      margin-bottom: 1rem;
+    }
+
+    /* ── Image grid ── */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    figure {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    figure:hover { transform: translateY(-3px); }
+    figure img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    figcaption {
+      padding: 0.6rem 0.8rem;
+      font-size: 0.85rem;
+      color: #555;
+      font-style: italic;
+      border-top: 1px solid #eee;
+    }
+
+    /* ── Fun-facts list ── */
+    ul.facts {
+      padding-left: 1.5rem;
+    }
+    ul.facts li {
+      margin-bottom: 0.6rem;
+    }
+    ul.facts li::marker {
+      color: #c8a46a;
+      font-size: 1.2rem;
+    }
+
+    /* ── Table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #5a3a1a;
+      color: #e8d5b0;
+      padding: 0.7rem 1rem;
+      text-align: left;
+    }
+    td {
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid #e0d4c0;
+    }
+    tr:nth-child(even) td { background: #f5ede0; }
+
+    /* ── Footer ── */
+    footer {
+      background: #3a2a1a;
+      color: #c8a46a;
+      text-align: center;
+      padding: 1.4rem 1rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: #e8d5b0; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav aria-label="Page navigation">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#anatomy">Anatomy</a></li>
+      <li><a href="#species">Common Species</a></li>
+      <li><a href="#habitat">Habitat &amp; Behaviour</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header>
+    <h1>🪳 All About Cockroaches</h1>
+    <p class="tagline">One of Earth's oldest and most resilient survivors</p>
+  </header>
+
+  <main>
+
+    <!-- ── Overview ── -->
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        Cockroaches (order <em>Blattodea</em>) are insects that have roamed the Earth for more than
+        300&nbsp;million years — long before the dinosaurs. Around 4,600 species have been described,
+        but only about 30 are associated with human habitats, and just a handful are considered pests.
+      </p>
+      <p>
+        Despite their reputation, cockroaches play important ecological roles as decomposers, recycling
+        nutrients in forest ecosystems and serving as prey for birds, reptiles, and small mammals.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Periplaneta_americana_3.jpg/640px-Periplaneta_americana_3.jpg"
+            alt="American cockroach on a surface"
+            loading="lazy"
+          />
+          <figcaption>American cockroach (<em>Periplaneta americana</em>) — one of the largest household species.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Blatta_orientalis1.jpg/640px-Blatta_orientalis1.jpg"
+            alt="Oriental cockroach"
+            loading="lazy"
+          />
+          <figcaption>Oriental cockroach (<em>Blatta orientalis</em>) — prefers cool, damp environments.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Anatomy ── -->
+    <section id="anatomy">
+      <h2>Anatomy</h2>
+      <p>
+        A cockroach's body is divided into three main parts: <strong>head</strong>,
+        <strong>thorax</strong>, and <strong>abdomen</strong>. Their flattened shape lets them squeeze
+        through remarkably thin cracks — some can fit through a gap as narrow as 3&nbsp;mm.
+      </p>
+      <p>
+        Key anatomical features include long, sensitive antennae used to detect chemicals and air
+        movements; compound eyes providing wide-angle vision; and six spiny legs adapted for rapid
+        running across almost any surface.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cockroach_anatomy.svg/640px-Cockroach_anatomy.svg.png"
+            alt="Labelled diagram of cockroach anatomy"
+            loading="lazy"
+            onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Blaberus_giganteus01.jpg/640px-Blaberus_giganteus01.jpg'"
+          />
+          <figcaption>Giant cave cockroach (<em>Blaberus giganteus</em>) showing the characteristic flattened body plan.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Species ── -->
+    <section id="species">
+      <h2>Common Species</h2>
+      <p>The table below lists the most frequently encountered cockroach species worldwide.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Common Name</th>
+            <th>Scientific Name</th>
+            <th>Length</th>
+            <th>Notable Trait</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>German Cockroach</td>
+            <td><em>Blattella germanica</em></td>
+            <td>13–16&nbsp;mm</td>
+            <td>Most common indoor pest globally</td>
+          </tr>
+          <tr>
+            <td>American Cockroach</td>
+            <td><em>Periplaneta americana</em></td>
+            <td>35–40&nbsp;mm</td>
+            <td>Largest common pest species; can fly</td>
+          </tr>
+          <tr>
+            <td>Oriental Cockroach</td>
+            <td><em>Blatta orientalis</em></td>
+            <td>20–25&nbsp;mm</td>
+            <td>Prefers cool, damp locations</td>
+          </tr>
+          <tr>
+            <td>Brown-banded Cockroach</td>
+            <td><em>Supella longipalpa</em></td>
+            <td>10–14&nbsp;mm</td>
+            <td>Nests in warm, elevated spots</td>
+          </tr>
+          <tr>
+            <td>Madagascar Hissing Cockroach</td>
+            <td><em>Gromphadorhina portentosa</em></td>
+            <td>50–75&nbsp;mm</td>
+            <td>Hisses by forcing air through spiracles; popular pet</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ── Habitat & Behaviour ── -->
+    <section id="habitat">
+      <h2>Habitat &amp; Behaviour</h2>
+      <p>
+        Most cockroaches are nocturnal and thrive in warm, humid environments. In nature they inhabit
+        leaf litter, rotting wood, caves, and soil. Indoor pest species are attracted to kitchens and
+        bathrooms where food and moisture are readily available.
+      </p>
+      <p>
+        Cockroaches communicate through pheromones and are capable of surprisingly complex group
+        decision-making — studies show they collectively choose shelter sites in a way that resembles
+        democratic voting. They are also omnivores, capable of surviving on almost any organic matter,
+        including paper, glue, and soap.
+      </p>
+      <div class="image-grid">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GromphadorhinaPortentosa.jpg/640px-GromphadorhinaPortentosa.jpg"
+            alt="Madagascar hissing cockroach"
+            loading="lazy"
+          />
+          <figcaption>Madagascar hissing cockroach — a wingless species popular in classrooms and as a pet.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Blattella_germanica_Richard_Bartz.jpg/640px-Blattella_germanica_Richard_Bartz.jpg"
+            alt="German cockroach close-up"
+            loading="lazy"
+          />
+          <figcaption>German cockroach (<em>Blattella germanica</em>) — the most widespread domestic pest cockroach.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Gallery ── -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="image-grid">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nauphoeta_cinerea_male.jpg/640px-Nauphoeta_cinerea_male.jpg"
+            alt="Lobster cockroach"
+            loading="lazy"
+          />
+          <figcaption>Lobster (Cinereous) cockroach — <em>Nauphoeta cinerea</em>.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Periplaneta_australasiae_01.jpg/640px-Periplaneta_australasiae_01.jpg"
+            alt="Australian cockroach"
+            loading="lazy"
+          />
+          <figcaption>Australian cockroach (<em>Periplaneta australasiae</em>) — note the yellow markings.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Blaberus_giganteus01.jpg/640px-Blaberus_giganteus01.jpg"
+            alt="Giant cave cockroach"
+            loading="lazy"
+          />
+          <figcaption>Giant cave cockroach (<em>Blaberus giganteus</em>) from Central America.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ── Fun Facts ── -->
+    <section id="facts">
+      <h2>Fun Facts</h2>
+      <ul class="facts">
+        <li>A cockroach can live for <strong>about a week without its head</strong> — it dies from dehydration, not blood loss.</li>
+        <li>They can hold their breath for up to <strong>40 minutes</strong> and survive submerged in water for half an hour.</li>
+        <li>A cockroach can run at speeds of up to <strong>5&nbsp;km/h</strong> — that's roughly 50 body lengths per second.</li>
+        <li>The world's heaviest cockroach is the <em>Macropanesthia rhinoceros</em> (rhinoceros cockroach) from Australia, weighing up to <strong>35&nbsp;g</strong>.</li>
+        <li>Cockroaches were among the survivors of the <strong>Hiroshima and Nagasaki atomic bomb blasts</strong> in 1945, though their radiation resistance is often overstated.</li>
+        <li>Some species reproduce via <strong>parthenogenesis</strong> — females can produce offspring without mating.</li>
+        <li>Fossil cockroaches have been found dating back to the <strong>Carboniferous period</strong>, over 300 million years ago.</li>
+        <li>Madagascar hissing cockroaches have been <strong>sent to space</strong> aboard Russian Foton-M biosatellites to study reproduction in microgravity.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>
+      Information sourced from
+      <a href="https://en.wikipedia.org/wiki/Cockroach" target="_blank" rel="noopener">Wikipedia — Cockroach</a>.
+      Images courtesy of
+      <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>
+      (various CC licenses).
+    </p>
+  </footer>
+
+</body>
+</html>
